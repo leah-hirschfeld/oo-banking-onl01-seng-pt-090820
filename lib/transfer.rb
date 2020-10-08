@@ -18,6 +18,7 @@ class Transfer
     if sender.valid? && receiver.valid?
       sender.balance -= amount
       receiver.balance += amount
+      transfer.status = "complete"
     else
       "Transaction rejected. Please check your account balance."
     end
