@@ -18,6 +18,6 @@ class Transfer
   end
   
   def reverse_transfer
-  
+    #return sender.amount to sender
   end
 end
