@@ -16,7 +16,10 @@ class Transfer
   def execute_transaction
     # BankAccount.balance
     if sender.valid? && receiver.valid?
-      sender.
+      sender.balance -= amount
+    else
+      
+    end
   end
   
   def reverse_transfer
