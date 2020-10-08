@@ -27,9 +27,10 @@ class Transfer
   end
   
   def reverse_transfer
-    #return sender.amount from Transfer to sender.balance BankAccount
+    if self.status == "complete"
     self.status = "reversed"
     sender.balance += amount
     receiver.balance -= amount
+    end
   end
 end
