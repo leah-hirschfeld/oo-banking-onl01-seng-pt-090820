@@ -18,6 +18,7 @@ class Transfer
   end
   
   def reverse_transfer
-    #return sender.amount to sender
+    #return sender.amount from Transfer to sender.balance BankAccount
+    
   end
 end
