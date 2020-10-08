@@ -17,6 +17,7 @@ class Transfer
     # BankAccount.balance
     if sender.valid? && receiver.valid?
       sender.balance -= amount
+      receiver.balnce =+ amount
     else
       "Transaction rejected. Please check your account balance."
     end
